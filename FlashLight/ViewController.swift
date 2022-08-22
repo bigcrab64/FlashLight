@@ -19,7 +19,13 @@ class ViewController: UIViewController
    
     @IBAction func flashColorButton(_ sender: Any)
     {
-        self.view.backgroundColor = UIColor.blue
+        if self.view.backgroundColor == UIColor.white{
+            self.view.backgroundColor = UIColor.red
+        }
+        else{
+            self.view.backgroundColor = UIColor.white
+        }
+        
         
     }
     
